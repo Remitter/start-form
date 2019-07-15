@@ -1,0 +1,14 @@
+{
+  "name": "start",
+  "version": "0.0.0",
+  "description": "The start from in html",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src --port=7070"
+  },
+  "author": "dalefrancis88",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
