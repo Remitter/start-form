@@ -2,6 +2,11 @@
 
 <html lang="en">
 <head>
+<style>
+  body{
+    background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/3395/theme_form_background_image-1519391220-174-942-5803395903.png?_=1519391221881')
+  }  
+</style>
   <meta charset="utf-8">
 
   <title>Remitter - Start</title>
@@ -12,7 +17,7 @@
 </head>
 
 <body>
-    <h5>
+  <h5>
     <b>Welcome to the Remitter on-boarding process</b>
     <br>
     <br>
@@ -43,7 +48,7 @@
     <input type="text">
 
     <label>
-      <b>Logo upload*</b>
+      <b>Logo upload</b>
     </label>
     <dt>
       Your logo will be displayed on the payment portal when customers are making payments. 
@@ -55,11 +60,67 @@
     <label>
       <b>Do you want to enable emails?</b>
     </label>
-    <input type="radio" name="Yes" value="Yes"> Yes<br>
-    <input type="radio" name="No" value="NO"> No<br>
+    <input type="radio" name="Yes" value="Yes"> Yes - Enable emails<br>
+    <input type="radio" name="No" value="NO"> No - Don't send emails<br>
 
+    <label>
+      <b>Do you want to enable SMS?</b>
+    </label>
+    <input type="radio" name="Yes" value="Yes"> Yes - Enable SMS<br>
+    <input type="radio" name="No" value="NO"> No - Don't send SMS<br>
 
+    <label>
+      <b>Do you want to enable Callbacks?</b>
+    </label>
+    <input type="radio" name="Yes" value="Yes"> Yes - Enable Callbacks<br>
+    <input type="radio" name="No" value="NO"> No - We don't want to receive callback requests<br>
 
-    <script src="js/scripts.js"></script>
+    <label>
+      <b>Do you want to offer your customers payment plans?</b>
+    </label>
+    <input type="radio" name="Yes" value="Yes"> Yes - Enable  Payment Plans<br>
+    <input type="radio" name="No" value="NO"> No - Only offer payment in full<br>
+
+    <label>
+      <b>Data Upload</b>
+    </label>
+    <dt>
+        Please provide an export of your debt data so that our on-boarding team can map your data to our system and provide feedback on any missing requirements.
+      <br><br>
+      <b>Please ensure you do not send real customer data at this point. The headers and one row of data example is enough to create a map.</b>
+      <br><br>
+      <i>There will generally be some edits required however we will discuss this together during on-boarding.
+        </i>
+    </dt>
+    <input type="file">
+
+    <label>
+      <b>Which Payment Gateway do you currently use?</b>
+    </label>
+    <dt>
+      This is the name of the payment gateway that you currently use, the Remitter team will assess the gateway in place and provide feedback on integration.
+    </dt>
+    <input type="text">
+
+    <lable>
+      <b>Payment Portal URL</b>
+    </lable>
+    <dt>
+      <b>What domain name would you like to use for your customer facing payment portal?</b>
+      <br><br>
+      This is normally a short subdomain such as <b>p.your-domain.com</b> or <b>pay.your-domain.com</b>.
+    </dt>
+
+    <label>
+      <b>Default Timezone</b>
+    </label>
+    <dt>
+        What is the default time zone to use in instances where customer zip codes or time zones are not supplied?
+    </dt>
+    <input type="text">
+
+    <label
+
+    <script src="js/scripts.js"></script>    
 </body>
 </html>
