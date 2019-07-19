@@ -1,191 +1,189 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <style>
-    dt{
-    color: #aaaaaa;
-    font-family: sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 1.2em;
-    padding-top: 4px;
-    }
-  </style>
   <meta charset="utf-8">
 
   <title>Remitter - Start</title>
   <meta name="description" content="The start form for Remitter">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <link rel="stylesheet" href="styles.css">
 </head>
-<div style="background-color:white; text-align: inherit; min-height: initial; width: 640px;
-padding-top: 0;
-padding-right: 40px;
-scroll-padding-bottom:  20px;
-padding-left: 40px;
-margin-top: 40px;
-margin-right: auto;
-margin-bottom: 40px;
-margin-left: auto;">
-<body style="background-image: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/3395/theme_form_background_image-1519391220-174-942-5803395903.png?_=1519391221881)">
-  <form method="POST" data-iframe-height="1"></form> 
-  <h5 class="form_block">
-    <b>Welcome to the Remitter on-boarding process</b>
-    <br>
-    <br>
-    
-    this process you'll be asked to provide your logo, data template, domain details and payment gateway keys to fully configure the Remitter platform.
-    <br>
-    <br>
-    If there's a section that isn't clear, or you have any questions about the process, please contact our team 
-   
-    <b>sales@remitter.com</b>
-    </h5>
-    <div class="form_block">
-    <label>
-      <b>Please enter your email addres</b>
-      <b>s <meta content="*"></b>
-    </label>
-    <dt>This will be used to contact you about your submission and resume this process at a later time if required.</dt>
-    <input style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px; border-color: transparent; " type="text">
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Company Legal Name</b>
-    </label>
-    <dt>Please enter your company's legal trading name</dt>
-    <input style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px; border-color: transparent; " type="text">
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Company Display Name</b>
-    </label>
-    <dt>Please enter your preferred company name to use on communications with customers</dt>
-    <input style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px; border-color: transparent; " type="text">
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Logo upload</b>
-    </label>
-    <dt>
-      Your logo will be displayed on the payment portal when customers are making payments. 
-      <br><br>
-      Please provide logos that are 300x300 and in the .SVG or .PNG format.
-    </dt>
-    <input style="box-sizing: border-box;
+
+<body>
+  <div>
+    <form method="POST" data-iframe-height="1">
+      <h5 class="form_block">
+        <b>Welcome to the Remitter on-boarding process</b>
+        <br>
+        <br>
+
+        this process you'll be asked to provide your logo, data template, domain details and payment gateway keys to
+        fully
+        configure the Remitter platform.
+        <br>
+        <br>
+        If there's a section that isn't clear, or you have any questions about the process, please contact our team
+
+        <b>sales@remitter.com</b>
+      </h5>
+      <div class="form_block">
+        <label>
+          <b>Please enter your email address</b>
+        </label>
+        <dt>This will be used to contact you about your submission and resume this process at a later time if required.
+        </dt>
+        <input type="text">
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Company Legal Name</b>
+        </label>
+        <dt>Please enter your company's legal trading name</dt>
+        <input
+          style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px; border-color: transparent; "
+          type="text">
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Company Display Name</b>
+        </label>
+        <dt>Please enter your preferred company name to use on communications with customers</dt>
+        <input
+          style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px; border-color: transparent; "
+          type="text">
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Logo upload</b>
+        </label>
+        <dt>
+          Your logo will be displayed on the payment portal when customers are making payments.
+          <br><br>
+          Please provide logos that are 300x300 and in the .SVG or .PNG format.
+        </dt>
+        <input style="box-sizing: border-box;
     display: block;
     width: 100%;
     height: 100%;
     padding: 40px" type="file">
-    <div>
-      Choose file or drag here
-    </div>
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Do you want to enable emails?</b>
-    </label>
-    <br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="Yes" value="Yes"> Yes - Enable emails<br>
-    </div>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="No" value="NO"> No - Don't send emails<br>
-    </div>
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Do you want to enable SMS?</b>
-    </label>
-    <br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="Yes" value="Yes"> Yes - Enable SMS<br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="No" value="NO"> No - Don't send SMS<br>
-    </div>
-    </div>
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Do you want to enable Callbacks?</b>
-    </label>
-    <br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="Yes" value="Yes"> Yes - Enable Callbacks<br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="No" value="NO"> No - We don't want to receive callback requests<br>
-    </div>
-    </div>
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Do you want to offer your customers payment plans?</b>
-    </label>
-    <br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="Yes" value="Yes"> Yes - Enable  Payment Plans<br>
-    <div style="padding-bottom: 9px; padding-top: 9px;">
-    <input type="radio" name="No" value="NO"> No - Only offer payment in full<br>
-    </div>
-    </div>
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Data Upload</b>
-    </label>
-    <dt>
-        Please provide an export of your debt data so that our on-boarding team can map your data to our system and provide feedback on any missing requirements.
-      <br><br>
-      <b>Please ensure you do not send real customer data at this point. The headers and one row of data example is enough to create a map.</b>
-      <br><br>
-      <i>There will generally be some edits required however we will discuss this together during on-boarding.
-        </i>
-    </dt>
-    <input type="file">
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Which Payment Gateway do you currently use?</b>
-    </label>
-    <dt>
-      This is the name of the payment gateway that you currently use, the Remitter team will assess the gateway in place and provide feedback on integration.
-    </dt>
-    <input style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px 8px; border-color: transparent; " type="text">
-    </div>
-    <br>
-    <div class="form_block">
-    <lable>
-      <b>Payment Portal URL</b>
-    </lable>
-    <dt>
-      <b>What domain name would you like to use for your customer facing payment portal?</b>
-      <br><br>
-      This is normally a short subdomain such as <b>p.your-domain.com</b> or <b>pay.your-domain.com</b>.
-    </dt>
-    </div>
-    <br>
-    <div class="form_block">
-    <label>
-      <b>Default Timezone</b>
-    </label>
-    <dt>
-        What is the default time zone to use in instances where customer zip codes or time zones are not supplied?
-    </dt>
-    <input style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px 8px; border-color: transparent;" type="text">
-    </label>
-    </div>
-    <script src="js/scripts.js"></script>    
+        <div>
+          Choose file or drag here
+        </div>
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Do you want to enable emails?</b>
+        </label>
+        <br>
+        <div style="padding-bottom: 9px; padding-top: 9px;">
+          <input type="radio" name="Yes" value="Yes"> Yes - Enable emails<br>
+        </div>
+        <div style="padding-bottom: 9px; padding-top: 9px;">
+          <input type="radio" name="No" value="NO"> No - Don't send emails<br>
+        </div>
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Do you want to enable SMS?</b>
+        </label>
+        <br>
+        <div style="padding-bottom: 9px; padding-top: 9px;">
+          <input type="radio" name="Yes" value="Yes"> Yes - Enable SMS<br>
+          <div style="padding-bottom: 9px; padding-top: 9px;">
+            <input type="radio" name="No" value="NO"> No - Don't send SMS<br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Do you want to enable Callbacks?</b>
+        </label>
+        <br>
+        <div style="padding-bottom: 9px; padding-top: 9px;">
+          <input type="radio" name="Yes" value="Yes"> Yes - Enable Callbacks<br>
+          <div style="padding-bottom: 9px; padding-top: 9px;">
+            <input type="radio" name="No" value="NO"> No - We don't want to receive callback requests<br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Do you want to offer your customers payment plans?</b>
+        </label>
+        <br>
+        <div style="padding-bottom: 9px; padding-top: 9px;">
+          <input type="radio" name="Yes" value="Yes"> Yes - Enable Payment Plans<br>
+          <div style="padding-bottom: 9px; padding-top: 9px;">
+            <input type="radio" name="No" value="NO"> No - Only offer payment in full<br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Data Upload</b>
+        </label>
+        <dt>
+          Please provide an export of your debt data so that our on-boarding team can map your data to our system and
+          provide feedback on any missing requirements.
+          <br><br>
+          <b>Please ensure you do not send real customer data at this point. The headers and one row of data example is
+            enough to create a map.</b>
+          <br><br>
+          <i>There will generally be some edits required however we will discuss this together during on-boarding.
+          </i>
+        </dt>
+        <input type="file">
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Which Payment Gateway do you currently use?</b>
+        </label>
+        <dt>
+          This is the name of the payment gateway that you currently use, the Remitter team will assess the gateway in
+          place and provide feedback on integration.
+        </dt>
+        <input
+          style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px 8px; border-color: transparent; "
+          type="text">
+      </div>
+      <br>
+      <div class="form_block">
+        <lable>
+          <b>Payment Portal URL</b>
+        </lable>
+        <dt>
+          <b>What domain name would you like to use for your customer facing payment portal?</b>
+          <br><br>
+          This is normally a short subdomain such as <b>p.your-domain.com</b> or <b>pay.your-domain.com</b>.
+        </dt>
+      </div>
+      <br>
+      <div class="form_block">
+        <label>
+          <b>Default Timezone</b>
+        </label>
+        <dt>
+          What is the default time zone to use in instances where customer zip codes or time zones are not supplied?
+        </dt>
+        <input
+          style=" color: #4c4c4c; background-color: rgba(240, 242, 246, 0.46); padding: 8px 8px; border-color: transparent;"
+          type="text">
+        </label>
+      </div>
+    </form>
+  </div>
+  <script src="js/scripts.js"></script>
 </body>
-</div>
+
 </html>

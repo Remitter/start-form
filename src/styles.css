@@ -1,0 +1,47 @@
+body {
+  background-image: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/3395/theme_form_background_image-1519391220-174-942-5803395903.png?_=1519391221881);
+}
+
+body > div {
+  background-color: white;
+  text-align: inherit;
+  min-height: initial;
+  width: 640px;
+  padding-top: 0;
+  padding-right: 40px;
+  scroll-padding-bottom: 20px;
+  padding-left: 40px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+form {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form_block {
+}
+
+.form_block > b {
+}
+
+.form_block > dt {
+  color: #aaaaaa;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.2em;
+  padding-top: 4px;
+}
+
+.form_block input[type="text"] {
+  color: #4c4c4c;
+  background-color: rgba(240, 242, 246, 0.46);
+  padding: 8px;
+  border-color: transparent;
+  border-radius: 3px;
+
+  width: 100%;
+}
