@@ -15,18 +15,18 @@
   <div>
     <form method="POST" data-iframe-height="1">
       <h5 class="form_block">
-        <b>Welcome to the Remitter on-boarding process</b>
+        Welcome to the Remitter on-boarding process
         <br>
         <br>
 
-        Throughout this process you'll be asked to provide your logo, data template, domain details and payment gateway keys to
+        <b>Throughout this process you'll be asked to provide your logo, data template, domain details and payment gateway keys to
         fully
-        configure the Remitter platform.
+        configure the Remitter platform.</b>
         <br>
         <br>
-        If there's a section that isn't clear, or you have any questions about the process, please contact our team
-
-        <b>sales@remitter.com</b>
+        <b>If there's a section that isn't clear, or you have any questions about the process, please contact our team
+        </b>
+        sales@remitter.com
       </h5>
       <div class="form_block">
         <label>
@@ -69,7 +69,7 @@
           <br><br>
           Please provide logos that are 300x300 and in the .SVG or .PNG format.
         </dt>  
-        
+                
           <span>Choose files or drag here</span>
           <input style=" box-sizing: border-box;
           display: block;
@@ -88,25 +88,41 @@
         </label>
         <br>
         <div style="padding-bottom: 9px; padding-top: 9px;">
-          <input 
-            type="radio" 
-            name="enableEmails" 
-            value="Yes"
-            onclick="show('email-section')"
+          <input
+          type="radio" 
+          name="enableEmails" 
+          value="Yes"
+          onclick="show('email-section')"
           > Yes - Enable emails
         </div>
         <div style="padding-bottom: 9px; padding-top: 9px;">
-          <input
+            <input
             type="radio"
             name="enableEmails"
             value="NO"
             onclick="hide('email-section')"
-            checked
           > No - Don't send emails
         </div>
         <div id='email-section' class='hidable hide' style="background-color: red; overflow: hidden;">
           <div style="height: 250px;">
-
+            <div class="form_block">
+              <label><b>Sender Email Address</b></label>
+              <dt>
+                This is the email address your customers will receive emails from. <br> <br>
+                It is recommended that you select an email address that is checked regularly
+                in case customers reply.
+              </dt>
+              <input type="text">
+            </div>
+            <br>
+            <br>
+              <div class="form_block">
+                  <lable><b>Sender Name</b></lable>
+                  <dt>
+                  This is the name that will appear next to the email address in customer's inboxes. 
+                  </dt>
+                  <input type="text">
+              </div>              
           </div>
         </div>
       </div>
@@ -132,22 +148,16 @@
         </label>
         <br>
         <div style="padding-bottom: 9px; padding-top: 9px;">
-          <input type="radio" name="Yes" value="Yes"> Yes - Enable Callbacks<br>
+          <input type="radio" name="enableCallbacks" value="Yes" onclick="show('callback-section')"> Yes - Enable Callbacks<br>
         </div>
           <div style="padding-bottom: 9px; padding-top: 9px;">
-            <input type="radio" name="No" value="NO"> No - We don't want to receive callback requests<br>
+            <input 
+            type="radio" 
+            name="enableCallbacks" 
+            value="NO" 
+            > No - We don't want to receive callback requests<br>
            </di>
-      </div>
-      <script>
-        function popUp(){
-          const x = click
-          if (x === yes){
-              return "block"
-          } else {
-              return "none"
-          }
-        }
-      </script>
+          </div>
       <br>
       <div class="form_block">
         <label>Callback Destination Email Address</label>
