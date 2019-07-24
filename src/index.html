@@ -102,9 +102,9 @@
             value="NO"
             onclick="hide('email-section')"
           > No - Don't send emails
-        </div>
-        <div id='email-section' class='hidable hide' style="background-color: red; overflow: hidden;">
-          <div style="height: 250px;">
+        </div> <br>
+        <div id='email-section' class='hidable hide'  style="overflow: hidden;">
+          <div style="height: auto;">
             <div class="form_block">
               <label><b>Sender Email Address</b></label>
               <dt>
@@ -114,7 +114,6 @@
               </dt>
               <input type="text">
             </div>
-            <br>
             <br>
               <div class="form_block">
                   <lable><b>Sender Name</b></lable>
@@ -155,15 +154,18 @@
             type="radio" 
             name="enableCallbacks" 
             value="NO" 
-            > No - We don't want to receive callback requests<br>
-           </di>
+            onclick="hide('callback-section')"> No - We don't want to receive callback requests<br>
+           </div>
+          </div> <br>
+      <div id='callback-section' class='hidable hide' style="overflow: hidden;">
+        <div style="height: auto;">
+          <div class="form_block">
+            <label>Callback Destination Email Address</label>
+            <dt>It is recommended that this email is checked regularly to ensure a good experience.</dt>
+            <input type="text">
           </div>
-      <br>
-      <div class="form_block">
-        <label>Callback Destination Email Address</label>
-        <dt>It is recommended that this email is checked regularly to ensure a good experience.</dt>
-        <input type="text">
-      </div>
+        </div>
+      </div> 
       <br>
       <div class="form_block">
         <label>
@@ -171,9 +173,35 @@
         </label>
         <br>
         <div style="padding-bottom: 9px; padding-top: 9px;">
-          <input type="radio" name="Yes" value="Yes"> Yes - Enable Payment Plans<br>
-          <div style="padding-bottom: 9px; padding-top: 9px;">
-            <input type="radio" name="No" value="NO"> No - Only offer payment in full<br>
+          <input type="radio" name="enablePayment" value="Yes" onclick="show('payment-section')"> Yes - Enable Payment Plans<br>
+        </div>
+        <div style="padding-bottom: 9px; padding-top: 9px;">
+            <input type="radio" name="enablePayment" value="NO" onclick="hide('payment-section')"> No - Only offer payment in full<br>
+        </div>
+      </div> <br>
+      <div id='payment-section' class='hidable hide' style="overflow: hidden;">
+        <div style="height: auto;">
+          <div class="form_block">
+            <lable><b>What payment plan intervals would you like to enable?</b></lable>
+            <dt>Each option ticked will be offered to the customer as a selectable plan interval</dt>
+            <input type="checkbox"> Weekly<br>
+            <input type="checkbox"> Every two weeks<br>
+            <input type="checkbox"> Monthly
+          </div> <br>
+          <div class="form_block">
+            <label><b>Minimum Invoice Amount</b></label>
+            <dt>What is the smallest invoice balance that you would allow a customer to pay on a plan? (i.e. Only invoices over $X will be shown the payment plan option)</dt>
+            <input type="text" placeholder="0.00">
+          </div> <br>
+          <div class="form_block">
+            <label><b>Minimum Interval Payment Amount</b></label>
+            <dt>What is the minimum amount a customer can pay per interval on a plan? (i.e. Each weekly/bi-weekly/monthly payment must be over $X)</dt>
+            <input type="text" placeholder="0">
+          </div><br>
+          <div class="form_block">
+            <label><b>Maximum Plan Length (in Weeks)</b></label>
+            <dt>What is the maximum repayment time you would allow for an account? (i.e. plans are allowed to go for as long as X weeks)</dt>
+            <input type="text">
           </div>
         </div>
       </div>
