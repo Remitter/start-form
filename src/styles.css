@@ -52,3 +52,10 @@ form {
 
   width: 100%;
 }
+
+.hidable {
+}
+
+.hide {
+  display: none;
+}
