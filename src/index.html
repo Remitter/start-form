@@ -13,6 +13,7 @@
 
 <body>
   <div>
+    <div class='logo-hero'><img src="https://remitter-marketing.azureedge.net/img/Logo.svg?_=1564175231085" alt="Remitter"></div>
     <form method="POST" data-iframe-height="1">
       <h5 class="form_block">
         Welcome to the Remitter on-boarding process
@@ -191,8 +192,11 @@
           <div class="form_block">
             <label><b>Minimum Invoice Amount</b></label>
             <dt>What is the smallest invoice balance that you would allow a customer to pay on a plan? (i.e. Only invoices over $X will be shown the payment plan option)</dt>
-            <input type="text" placeholder="USD 0.00" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-            </div> <br>
+            <div id="min-invoice-amount">
+                <input type="number" placeholder="0.00">
+                <span>USD</span>
+            </div>
+            </div> 
           <div class="form_block">
             <label><b>Minimum Interval Payment Amount</b></label>
             <dt>What is the minimum amount a customer can pay per interval on a plan? (i.e. Each weekly/bi-weekly/monthly payment must be over $X)</dt>
