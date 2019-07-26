@@ -191,17 +191,20 @@
           <div class="form_block">
             <label><b>Minimum Invoice Amount</b></label>
             <dt>What is the smallest invoice balance that you would allow a customer to pay on a plan? (i.e. Only invoices over $X will be shown the payment plan option)</dt>
-            <input type="text" placeholder="0.00">
-          </div> <br>
+            <input type="text" placeholder="USD 0.00" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+            </div> <br>
           <div class="form_block">
             <label><b>Minimum Interval Payment Amount</b></label>
             <dt>What is the minimum amount a customer can pay per interval on a plan? (i.e. Each weekly/bi-weekly/monthly payment must be over $X)</dt>
-            <input type="text" placeholder="0">
+            <input type="text" placeholder="0" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
           </div><br>
           <div class="form_block">
             <label><b>Maximum Plan Length (in Weeks)</b></label>
-            <dt>What is the maximum repayment time you would allow for an account? (i.e. plans are allowed to go for as long as X weeks)</dt>
-            <input type="text">
+            <dt>What is the maximum repayment time you would allow for an account? (i.e. plans are allowed to go for as long as X weeks)</dt>   
+          <input type="text" onkeypress="return show('k-section') || hide('k-section')">
+          <div id='k-section' class='hidable hide'  style="overflow: hidden; color: red; font-family: sans-serif; font-size: 12px;">
+              Expected input:numeric (only numbers) 
+            </div>
           </div>
         </div>
       </div>
