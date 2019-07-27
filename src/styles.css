@@ -43,7 +43,7 @@ form {
   padding-top: 4px;
 }
 
-.form_block input[type="text"] {
+.form_block input[type="text"], .form_block input[type="number"] {
   color: #4c4c4c;
   background-color: rgba(240, 242, 246, 0.46);
   padding: 8px;
@@ -51,4 +51,36 @@ form {
   border-radius: 3px;
 
   width: 100%;
+}
+
+.hidable {
+}
+
+.hide {
+  display: none;
+}
+
+.logo-hero {
+  padding-top: 32px;
+}
+
+#min-invoice-amount {
+  position: relative;
+}
+
+#min-invoice-amount input {
+  padding-left: 48px;
+}
+
+#min-invoice-amount span {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+
+  color: #4c4c4c;
+  font-size: 14px;
+
+  opacity: 0.72;
 }
