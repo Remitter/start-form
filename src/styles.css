@@ -21,10 +21,17 @@ form {
   font-family: "Open Sans", sans-serif;
 }
 
-.form_block {
+.form_block{
+  
 }
 
 .form_block > b {
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em
+  
 }
 
 .form_block > dt {
